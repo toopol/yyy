@@ -7,67 +7,90 @@
     <meta name="keywords" content="Lev">
     <meta name="description" content="Resume">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<img src="https://besthqwallpapers.com/Uploads/3-10-2016/8884/thumb-little-kitty-green-grass-cat-white-kitten.jpg" alt="kit">
-<h1>Кот Барбос</h1>
-<p>Валяюсь целый <strong>день</strong>  пузом к верху.</p>  
-<p> Езжу на  <em>такси</em> куда хочу</p>
-<p><strong>Список ссылок:</strong></p>
-<a href="https://vk.com" target="_blank">VK</a>|
-<a href="https://www.youtube.com" target="_blank">Ютуб</a>|
-<a href="https://www.instagram.com" target="_blank">Неработающая херня</a>
+    <div class="container">
+        <div class="info">
+            <img src="/Users/levgladcenko/Downloads/Work/foto111.png" alt="foto" class="avatar">
+            <div class="info-text">
+                <h1>Гладченко Лев</h1>
+                <p>Frontend разрабочтик.</p>  
+            
+                <h4>Список ссылок:</h4>
+                <a href="https://vk.com" target="_blank">VK</a> |
+                <a href="https://web.telegram.org" target="_blank">Telegramm</a> |
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
+    <div class="card bg-green">
+        <h3>Мои Хобби</h3>
+        <ol class="list">
+            <li>Психология</li>
+            <li>Бег, тренажерный зал</li>
+            <li>Настольные командные игры</li>
+        </ol>
+    </div>
+    <div class="card bg-red">
+            <h2>Опыт работы</h2>
 
-<h3>Мои Хобби</h3>
-<ol>
-    <li>Есть</li>
-    <li>Лежать</li>
-    <li>Смотреть ТВ</li>
-</ol>
+        <table class="table">
+        <!-- <thead>
+            <tr>
+                <th>Название</th>
+                <th>Должность</th>
+                <th>Год</th>
+            </tr>
+        </thead> -->
+        <tr>
+            <td>ОАО "Карат"</td>
+            <td>Ювелирз-закрепщик</td>
+            <td>2018-2022</td>
+        </tr>
+        <!-- <tr>
+            <td>Транспортная компания ТЭКБ</td>
+            <td>Менеджер по логистике</td>
+            <td>2016-2018</td>
+        </tr>
+        <tr>
+            <td>metro Cash & Carry</td>
+            <td>Заместитель начальника отдела</td>
+            <td>2015-2016</td>
+        </tr> -->
+        </table>
+    </div>
 
-<h2>Опыт работы</h2>
+    <div class="card bg-yellow">
+        <h2>Мои курсы</h2>
+        <ul class="link-co">
+            <li>
+                <a href="https://alphaschoolmalta.com">Курс английского языка</a>
+            </li>
+            <li>
+                <a href="google.com">Курсы</a>
+            </li>
+        </ul>
+    </div>
 
-<table>
-<thead>
-    <tr>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Год</th>
-    </tr>
-</thead>
-<tr>
-    <td>Hoouu</td>
-    <td>LLLlll</td>
-    <td>2003</td>
-</tr>
-<tr>
-    <td>Joob</td>
-    <td>Inos</td>
-    <td>2015</td>
-</tr>
-<tr>
-    <td>Doom</td>
-    <td>Kipo</td>
-    <td>2022</td>
-</tr>
-</table>
-
-<h2>Связь</h2>
-<form>
-<div>
-<label for="name">Ваше имя</label>
-<input type="text" id="name" placeholder="Введите имя">
+    
+    <form action="/" class="form">
+        <h2>Связь</h2>
+        <div class="form-row">
+            <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" placeholder="Введите имя">
+            </div>
+            <div class="form-group">
+                <label for="email">Введите емаил</label>
+                <input type="email" id="email" placeholder="Введите емаил">
+            </div>
+        </div>
+    <div class="form-group">
+        <label for="message">Введите сообщение</label>
+        <textarea id="message" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
+    </div>
+    <input class="btn" type="submit" value="Отправить!">
+    </form>
 </div>
-<div>
-    <label for="email">Введите емаил</label>
-    <input type="email" id="email" placeholder="Введите емаил">
-</div>
-<div>
-    <label for="message">Введите сообщение</label>
-    <br>
-    <textarea id="message" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
-</div>
-<input type="submit" value="Отправить!">
-</form>
 </body>
 </html>
